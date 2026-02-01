@@ -13,7 +13,6 @@ body {
 }
 
 button, input {
-  display:block;
   width:100%;
   margin:6px 0;
   padding:8px;
