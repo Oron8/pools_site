@@ -2,22 +2,15 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Encuesta</title>
+  <title>Encuestas</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <div class="card">
-    <h1>¿Cuál es tu opción favorita?</h1>
+<h1>Encuestas activas</h1>
+<div id="polls"></div>
 
-    <button onclick="vote('A')">Opción A</button>
-    <button onclick="vote('B')">Opción B</button>
-    <button onclick="vote('C')">Opción C</button>
-
-    <div id="results"></div>
-  </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-  <script src="app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="app.js"></script>
 </body>
 </html>
