@@ -2,21 +2,31 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Admin Polls</title>
+  <title>Admin de encuestas</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h1>Panel de control de encuestas</h1>
+<header>
+  <h1>🛠️ Admin de encuestas</h1>
+</header>
 
-<div class="box">
+<main>
+
   <input id="pollTitle" placeholder="Título de la encuesta">
-  <button id="createPollBtn">Crear encuesta</button>
-</div>
+  <input id="pollLink" placeholder="https://strawpoll.com/embed/XXXX">
 
-<div id="polls"></div>
+  <button id="addPoll">Agregar encuesta</button>
 
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script src="admin.js"></script>
+  <h2>Encuestas creadas</h2>
+  <div id="pollList"></div>
+
+</main>
+
+<script src="script.js"></script>
+<script>
+  renderAdmin();
+</script>
+
 </body>
 </html>
