@@ -1,38 +1,22 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta charset="UTF-8">
   <title>Admin Polls</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main class="container">
-    <h1>Panel Admin</h1>
 
-    <section id="loginSection">
-      <h2>Login</h2>
-      <input id="email" placeholder="Email" type="email" />
-      <input id="password" placeholder="Password" type="password" />
-      <button id="loginBtn">Entrar</button>
-      <div id="loginMessage" class="muted"></div>
-    </section>
+<h1>Panel de control de encuestas</h1>
 
-    <section id="panelSection" hidden>
-      <h2>Crear encuesta</h2>
-      <input id="pollTitle" placeholder="Título de la encuesta" />
-      <input id="opt1" placeholder="Opción 1" />
-      <input id="opt2" placeholder="Opción 2" />
-      <button id="createBtn">Crear encuesta</button>
+<div class="box">
+  <input id="pollTitle" placeholder="Título de la encuesta">
+  <button id="createPollBtn">Crear encuesta</button>
+</div>
 
-      <h2>Encuestas</h2>
-      <div id="adminPolls">Cargando...</div>
-      <button id="logoutBtn">Cerrar sesión</button>
-    </section>
-  </main>
+<div id="polls"></div>
 
-  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/supabase.min.js"></script>
-  <script src="auth.js"></script>
-  <script src="admin.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="admin.js"></script>
 </body>
 </html>
