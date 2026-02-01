@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Admin Polls</title>
+  <title>Admin</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,16 +12,17 @@
 <div id="login">
   <input id="email" placeholder="Email">
   <input id="password" type="password" placeholder="Password">
-  <button onclick="login()">Login</button>
+  <button id="loginBtn">Login</button>
 </div>
 
 <div id="panel" hidden>
-  <input id="title" placeholder="Título del poll">
+  <h2>Nuevo Poll</h2>
+  <input id="pollTitle" placeholder="Título">
   <input id="opt1" placeholder="Opción 1">
   <input id="opt2" placeholder="Opción 2">
-  <button onclick="createPoll()">Crear poll</button>
+  <button id="createBtn">Crear</button>
 
-  <h2>Polls</h2>
+  <h2>Encuestas</h2>
   <div id="polls"></div>
 </div>
 
