@@ -1,19 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Encuestas - Público</title>
+  <meta charset="UTF-8">
+  <title>Encuesta activa</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main class="container">
-    <h1>Encuestas activas</h1>
-    <div id="polls" aria-live="polite">Cargando...</div>
-  </main>
 
-  <!-- Supabase v2 -->
-  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/supabase.min.js"></script>
-  <script src="app.js"></script>
+<header>
+  <h1>📊 Encuesta</h1>
+</header>
+
+<main>
+  <div id="pollContainer">
+    <p>No hay encuesta activa.</p>
+  </div>
+</main>
+
+<script src="script.js"></script>
+<script>
+  renderHome();
+</script>
+
 </body>
 </html>
