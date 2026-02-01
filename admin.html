@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Polls</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Panel Admin</h1>
+
+<div id="login">
+  <input id="email" placeholder="Email">
+  <input id="password" type="password" placeholder="Password">
+  <button onclick="login()">Login</button>
+</div>
+
+<div id="panel" hidden>
+  <input id="title" placeholder="Título del poll">
+  <input id="opt1" placeholder="Opción 1">
+  <input id="opt2" placeholder="Opción 2">
+  <button onclick="createPoll()">Crear poll</button>
+
+  <h2>Polls</h2>
+  <div id="polls"></div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="auth.js"></script>
+<script src="admin.js"></script>
+</body>
+</html>
